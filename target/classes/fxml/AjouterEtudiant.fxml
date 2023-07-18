@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="354.0" prefWidth="360.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.big3_2020.gestionetudiant.Controller.AjouterEtudiantController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="12.0" layoutY="202.0" prefHeight="30.0" prefWidth="60.0" text="Téléphone" />
+      <HBox layoutX="19.0" layoutY="118.0" prefHeight="31.0" prefWidth="297.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="51.0" text="Prénom" />
+            <TextField fx:id="prenom_tfd" prefHeight="31.0" prefWidth="245.0" promptText="Entrez le prenom" />
+         </children>
+      </HBox>
+      <Group layoutX="20.0" layoutY="160.0">
+         <children>
+            <TextField fx:id="Age_tfd" layoutX="50.0" prefHeight="31.0" prefWidth="244.0" promptText="Entrez l'age" />
+            <Label layoutY="1.0" prefHeight="30.0" prefWidth="33.0" text="Age" />
+         </children>
+      </Group>
+      <HBox layoutX="19.0" layoutY="76.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="51.0" text="Nom" />
+            <TextField fx:id="name_tfd" prefHeight="31.0" prefWidth="246.0" promptText="Entrez le nom" />
+         </children>
+      </HBox>
+      <TextField fx:id="Telephone_tfd" layoutX="72.0" layoutY="202.0" prefHeight="31.0" prefWidth="244.0" promptText="Entrez le numero de telephone" />
+      <Pane layoutY="-1.0" prefHeight="57.0" prefWidth="360.0" style="-fx-background-color: #001834;" stylesheets="@../styles/Styles.css">
+         <children>
+            <Label layoutX="106.0" layoutY="20.0" text="Renseignement Des Informations" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Button fx:id="btnEnregistrer" layoutX="67.0" layoutY="295.0" mnemonicParsing="false" onAction="#btnEnregistrer_Click" prefHeight="42.0" prefWidth="246.0" style="-fx-background-color: #001834;" text="Enregitrer" textFill="WHITE" />
+      <ComboBox fx:id="cbbClasse" layoutX="69.0" layoutY="249.0" prefHeight="31.0" prefWidth="244.0" />
+      <Label layoutX="21.0" layoutY="259.0" text="Classe" />
+   </children>
+</AnchorPane>

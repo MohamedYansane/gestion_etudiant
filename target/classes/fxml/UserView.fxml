@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="539.0" prefWidth="740.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.big3_2020.gestionetudiant.Controller.UserViewController">
+   <children>
+      <Label layoutX="124.0" layoutY="43.0" text="Nom" />
+      <TextField fx:id="txtNom" layoutX="202.0" layoutY="39.0" prefHeight="25.0" prefWidth="235.0" promptText="Entrez le nom" />
+      <Label layoutX="124.0" layoutY="74.0" text="Prenom" />
+      <TextField fx:id="txtPrenom" layoutX="202.0" layoutY="70.0" prefHeight="25.0" prefWidth="235.0" promptText="Entrez le prenom" />
+      <Label layoutX="124.0" layoutY="109.0" prefHeight="17.0" prefWidth="60.0" text="Identifiant" />
+      <TextField fx:id="txtIdentifiant" layoutX="202.0" layoutY="105.0" prefHeight="25.0" prefWidth="235.0" promptText="Entrez'identifiant" />
+      <Label layoutX="124.0" layoutY="140.0" text="Role" />
+      <ComboBox fx:id="cbbRole" layoutX="202.0" layoutY="136.0" prefHeight="25.0" prefWidth="235.0" />
+      <Button fx:id="btnAjouter" layoutX="124.0" layoutY="173.0" mnemonicParsing="false" onAction="#Ajouter_Click" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #001834;" text="Add" textFill="WHITE" />
+      <Button fx:id="btnUpdate" layoutX="217.0" layoutY="173.0" mnemonicParsing="false" onAction="#Modifier_Click" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #001834;" text="Update" textFill="WHITE">
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="312.0" layoutY="173.0" mnemonicParsing="false" onAction="#Delete_Click" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #001834;" text="Delete" textFill="WHITE">
+         <padding>
+            <Insets left="14.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnAnnuler" layoutX="412.0" layoutY="173.0" mnemonicParsing="false" onAction="#Annuler_Click" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #001834;" text="Roll-Back" textFill="WHITE">
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnRestPassword" layoutX="507.0" layoutY="173.0" mnemonicParsing="false" onAction="#ResetPassword_Click" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #001834;" text="Reset Password" textFill="WHITE" />
+      <TableView fx:id="tableUtilisateur" layoutX="124.0" layoutY="211.0" prefHeight="260.0" prefWidth="533.0">
+        <columns>
+          <TableColumn fx:id="cell_nom" prefWidth="121.0" text="Nom" />
+          <TableColumn fx:id="cell_prenom" minWidth="0.0" prefWidth="148.0" text="Prenom" />
+            <TableColumn fx:id="cell_identifiant" minWidth="0.0" prefWidth="151.0" text="Identifiant" />
+            <TableColumn fx:id="cell_role" minWidth="0.0" prefWidth="112.0" text="Role" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="314.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flaticonJava/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="221.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flaticonJava/edit%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="129.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flaticonJava/add.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="10.0" layoutX="418.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flaticon/go-back-arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="514.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flaticon/synchronize.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

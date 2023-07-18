@@ -1,0 +1,53 @@
+.button:hover {
+    -fx-background-color:black;
+    -fx-scale-y: 1.1;
+}
+.btnEtudiants,.btnClasse,.btnParents,.btnPaiements,.btnCompte,.btnProfesseurs
+{
+        -fx-border-color: transparent transparent white transparent;
+}
+.button
+{
+    -fx-background-color:transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+   
+
+}
+.dashboard
+{
+    -fx-background-color: #FFFFFF;
+   
+}
+.MenuVertical
+{
+    /*linear-gradient(to right, #141C40, #224ABE) #007AFA*/
+    -fx-background-color: #001834;
+}
+.emticone
+{
+    -fx-padding-right: 35px;
+}
+.paneTop
+{
+    -fx-background-color:#FFFFFF;
+    
+}
+.headerTop
+{
+    -fx-border-radius:15px;
+    -fx-background-color-white:white;
+    -fx-border-color:#C1C1C1;
+}
+.panelEtudiant
+{
+    -fx-border-radius:30px;
+    -fx-background-radius:30px;
+    
+    -fx-border-color:#2D2D30;
+}
+.table-row-cell{}
+.bottom{
+    -fx-background-color: white;
+}
+

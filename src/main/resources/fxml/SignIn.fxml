@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="lblReset" onMouseClicked="#resetTextField_click" prefHeight="414.0" prefWidth="302.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.big3_2020.gestionetudiant.Controller.SignInController">
+   <children>
+      <ImageView fitHeight="68.0" fitWidth="88.0" layoutX="117.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flaticon/user%20(2).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtIdentifiant" layoutX="55.0" layoutY="180.0" prefHeight="25.0" prefWidth="218.0" promptText="Identifiant" />
+      <Button fx:id="btnConecter" layoutX="55.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnConecter_Click" prefHeight="35.0" prefWidth="218.0" style="-fx-background-color: #001834;" text="Connecter" textFill="WHITE" />
+      <Text layoutX="118.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connexion">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="75.0" layoutY="267.0" prefHeight="17.0" prefWidth="197.0" text="Renitialiser les champs de texte" />
+      <Label fx:id="lblIncorrect" layoutX="41.0" layoutY="132.0" prefHeight="17.0" prefWidth="262.0" textFill="RED" />
+      <PasswordField fx:id="txtPassword" layoutX="55.0" layoutY="230.0" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="117.0" layoutY="157.0" text="Identifiant" />
+      <Label layoutX="115.0" layoutY="210.0" text="Mot de passe" />
+      <ImageView fitHeight="17.0" fitWidth="18.0" layoutX="273.0" layoutY="13.0" onMouseClicked="#img_exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flaticonJava/cancel.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

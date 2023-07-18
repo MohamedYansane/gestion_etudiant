@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="988.0" styleClass="mainFxmlClass" stylesheets="@../styles/etudianttable.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.big3_2020.gestionetudiant.Controller.StudentViewController">
+   <children>
+      <Label layoutX="11.0" layoutY="183.0" prefHeight="30.0" prefWidth="60.0" text="Téléphone" />
+      <TextField fx:id="prenom_tfd" layoutX="74.0" layoutY="98.0" prefHeight="31.0" prefWidth="217.0" promptText="Saisissez le prenom" />
+      <TextField fx:id="Age_tfd" layoutX="74.0" layoutY="142.0" prefHeight="31.0" prefWidth="217.0" promptText="Saisissez l'age" />
+      <TableView fx:id="tableStudent" layoutX="275.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="245.0" prefWidth="672.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="50.0">
+         <columns>
+            <TableColumn fx:id="name_cell" prefWidth="128.0" text="Nom" />
+            <TableColumn fx:id="prenom_cell" prefWidth="188.0" text="Prenom" />
+            <TableColumn fx:id="age_cell" prefWidth="161.0" text="Age" />
+            <TableColumn fx:id="telephone_cell" prefWidth="220.0" text="Telephone" />
+         </columns>
+      </TableView>
+      <Label layoutX="9.0" layoutY="99.0" prefHeight="30.0" prefWidth="51.0" text="Prénom" />
+      <Button fx:id="btnModifier" layoutX="210.0" layoutY="222.0" mnemonicParsing="false" onAction="#Modifier_clik" prefHeight="31.0" prefWidth="81.0" text="Modifier" />
+      <Button fx:id="btnEffacer" layoutX="75.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Effacer_click" prefHeight="31.0" prefWidth="122.0" text="Effacer" />
+      <Button fx:id="btnQuitter" layoutX="210.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Quitter_clik" prefHeight="31.0" prefWidth="81.0" text="Quitter" AnchorPane.rightAnchor="697.0" />
+      <Label layoutX="11.0" layoutY="143.0" prefHeight="30.0" prefWidth="33.0" text="Age" />
+      <Label layoutX="9.0" layoutY="57.0" prefHeight="30.0" prefWidth="51.0" text="Nom" />
+      <TextField fx:id="name_tfd" layoutX="74.0" layoutY="56.0" prefHeight="31.0" prefWidth="217.0" promptText="Saisissez le nom" />
+      <TextField fx:id="Telephone_tfd" layoutX="74.0" layoutY="182.0" prefHeight="31.0" prefWidth="217.0" promptText="Saisissez le numero de telephone" />
+      <Group layoutX="877.0" layoutY="87.0" />
+      <Button fx:id="btnAjouter" graphicTextGap="10.0" layoutX="873.0" layoutY="5.0" mnemonicParsing="false" onAction="#Ajouter_click" prefHeight="38.0" prefWidth="101.0" text="Ajouter">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@flaticonJava/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Group layoutX="78.0" layoutY="241.0" />
+      <Button fx:id="btnSupprimer" layoutX="75.0" layoutY="222.0" mnemonicParsing="false" onAction="#Supprimer_clik" prefHeight="31.0" prefWidth="122.0" text="Supprimer">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@flaticonJava/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
